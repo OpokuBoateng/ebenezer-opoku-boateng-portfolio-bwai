@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebenezer Opoku Boateng | Software Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio of Ebenezer Opoku Boateng - Software Developer & BTECH Information Technology (Software Engineering) student at Takoradi Technical University.">
+    <meta name="author" content="Ebenezer Opoku Boateng">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Canvas / Effects -->
+    <div class="ambient-glow glow-top"></div>
+    <div class="ambient-glow glow-bottom"></div>
+
+    <!-- Navigation Bar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__logo">
+                <span class="logo__bracket">&lt;</span>
+                <span class="logo__name">EOB</span>
+                <span class="logo__slash">/</span>
+                <span class="logo__bracket">&gt;</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link active-link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close Button for Mobile -->
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme__toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+                    <i class="fa-solid fa-moon theme__icon-dark"></i>
+                    <i class="fa-solid fa-sun theme__icon-light"></i>
+                </button>
+
+                <!-- Action Button -->
+                <a href="#contact" class="btn btn--small btn--primary nav__cta">Let's Talk</a>
+
+                <!-- Hamburger Menu Button -->
+                <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="hero">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <div class="hero__badge">
+                        <span class="pulse-dot"></span>
+                        <span>Available for Internships & Projects</span>
+                    </div>
+
+                    <h1 class="hero__title">
+                        Hi, I'm <span class="gradient-text">Ebenezer Opoku Boateng</span>
+                    </h1>
+
+                    <h2 class="hero__subtitle">
+                        Software Developer <span class="hero__divider">|</span> BTech IT (Software Engineering)
+                    </h2>
+
+                    <p class="hero__description">
+                        Passionate software developer based in <strong>Takoradi, Ghana</strong>, currently interning at the 
+                        <strong>Directorate of ICT Services, TTU</strong>. I engineer responsive, accessible web interfaces 
+                        and build robust backend architectures using Python, Java, PHP, and modern Web technologies.
+                    </p>
+
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                        </a>
+                        <a href="#contact" class="btn btn--secondary">
+                            <span>Get in Touch</span>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </a>
+                        <button class="btn btn--ghost" id="view-cv-btn" title="View CV Overview">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>View CV</span>
+                        </button>
+                    </div>
+
+                    <div class="hero__socials">
+                        <span class="socials__label">Connect:</span>
+                        <div class="socials__links">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social__link" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ebenezer-boateng-opoku-a9831430a" target="_blank" rel="noopener noreferrer" class="social__link" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://wa.me/233593658166" target="_blank" rel="noopener noreferrer" class="social__link" title="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://t.me/OpokuBoatengEbenezer" target="_blank" rel="noopener noreferrer" class="social__link" title="Telegram">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="https://twitter.com/opoku_Boateng2" target="_blank" rel="noopener noreferrer" class="social__link" title="X (Twitter)">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://facebook.com/opokuboateng.ebenezer5" target="_blank" rel="noopener noreferrer" class="social__link" title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@ebenezerboateng1520" target="_blank" rel="noopener noreferrer" class="social__link" title="YouTube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__card glass-card">
+                        <div class="terminal-bar">
+                            <div class="terminal-dot red"></div>
+                            <div class="terminal-dot yellow"></div>
+                            <div class="terminal-dot green"></div>
+                            <span class="terminal-title">ebenezer@developer:~</span>
+                        </div>
+                        <div class="terminal-body font-mono">
+                            <p class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</p>
+                            <p class="code-line indent-1"><span class="code-prop">name</span>: <span class="code-string">"Ebenezer Opoku Boateng"</span>,</p>
+                            <p class="code-line indent-1"><span class="code-prop">degree</span>: <span class="code-string">"BTech IT (Software Eng)"</span>,</p>
+                            <p class="code-line indent-1"><span class="code-prop">institution</span>: <span class="code-string">"Takoradi Technical University"</span>,</p>
+                            <p class="code-line indent-1"><span class="code-prop">internship</span>: <span class="code-string">"Directorate of ICT Services, TTU"</span>,</p>
+                            <p class="code-line indent-1"><span class="code-prop">coreLanguages</span>: [<span class="code-string">"Python"</span>, <span class="code-string">"Java"</span>, <span class="code-string">"PHP"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"SQL"</span>],</p>
+                            <p class="code-line indent-1"><span class="code-prop">values</span>: [<span class="code-string">"Clean Code"</span>, <span class="code-string">"Accountability"</span>, <span class="code-string">"Continuous Learning"</span>],</p>
+                            <p class="code-line indent-1"><span class="code-prop">status</span>: <span class="code-string">"Building innovative solutions 🚀"</span></p>
+                            <p class="code-line">};</p>
+                            <p class="code-line"><span class="code-keyword">console</span>.<span class="code-func">log</span>(<span class="code-string">"Ready to make an impact."</span>);</p>
+                        </div>
+                        <div class="hero__card-footer">
+                            <div class="status-indicator">
+                                <span class="status-indicator__dot"></span>
+                                <span>Takoradi, Western Region, Ghana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="stats section--sm">
+            <div class="stats__container container grid">
+                <div class="stat__card glass-card">
+                    <div class="stat__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="stat__content">
+                        <h3 class="stat__number">2025-2028</h3>
+                        <p class="stat__label">BTech Software Eng</p>
+                    </div>
+                </div>
+
+                <div class="stat__card glass-card">
+                    <div class="stat__icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="stat__content">
+                        <h3 class="stat__number">5+</h3>
+                        <p class="stat__label">Languages & Stacks</p>
+                    </div>
+                </div>
+
+                <div class="stat__card glass-card">
+                    <div class="stat__icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="stat__content">
+                        <h3 class="stat__number">TTU ICT</h3>
+                        <p class="stat__label">Directorate Intern</p>
+                    </div>
+                </div>
+
+                <div class="stat__card glass-card">
+                    <div class="stat__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="stat__content">
+                        <h3 class="stat__number">100%</h3>
+                        <p class="stat__label">Accountability & Security</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Get To Know Me</span>
+                    <h2 class="section__title">About Myself</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="about__container grid">
+                    <div class="about__text">
+                        <p class="about__paragraph">
+                            I am a focused software developer pursuing a <strong>BTECH in Information Technology (Software Engineering)</strong> 
+                            at <strong>Takoradi Technical University</strong> (graduating 2028). My journey combines solid theoretical foundations 
+                            with hands-on practical engineering.
+                        </p>
+                        <p class="about__paragraph">
+                            Currently interning at the <strong>Directorate of ICT Services at TTU</strong>, I work alongside seasoned industry 
+                            professionals, sharpening my craft in web design (HTML, CSS, JavaScript), application structure, and backend services.
+                        </p>
+                        <p class="about__paragraph">
+                            With previous experience at <strong>DND Next Gen Technology</strong> crafting Python Tkinter GUIs and integrating secure 
+                            backend APIs, plus a disciplined background in financial service operations (Mobile Money fraud detection and accountability), 
+                            I approach software development with deep respect for system security, user empathy, and clean code.
+                        </p>
+
+                        <div class="about__features grid">
+                            <div class="about__feature-item">
+                                <i class="fa-solid fa-laptop-code feature__icon"></i>
+                                <div>
+                                    <h4>Full-Stack Foundation</h4>
+                                    <p>Crafting modern web frontends & architecting reliable backend services.</p>
+                                </div>
+                            </div>
+                            <div class="about__feature-item">
+                                <i class="fa-solid fa-bug-slash feature__icon"></i>
+                                <div>
+                                    <h4>Error Handling & Robustness</h4>
+                                    <p>Providing informative error diagnostics and clean defensive coding.</p>
+                                </div>
+                            </div>
+                            <div class="about__feature-item">
+                                <i class="fa-solid fa-people-group feature__icon"></i>
+                                <div>
+                                    <h4>Communication & Teamwork</h4>
+                                    <p>Experienced in customer relations, peer training, and mentoring juniors.</p>
+                                </div>
+                            </div>
+                            <div class="about__feature-item">
+                                <i class="fa-solid fa-arrow-trend-up feature__icon"></i>
+                                <div>
+                                    <h4>Continuous Growth</h4>
+                                    <p>Constantly mastering modern frameworks, algorithms, and dev tools.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__info-card glass-card">
+                        <h3 class="info-card__title">Quick Profile Details</h3>
+                        <ul class="info-card__list">
+                            <li>
+                                <span class="info-card__key"><i class="fa-solid fa-user"></i> Full Name:</span>
+                                <span class="info-card__val">Ebenezer Opoku Boateng</span>
+                            </li>
+                            <li>
+                                <span class="info-card__key"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                <span class="info-card__val"><a href="mailto:ebenezerb619@gmail.com">ebenezerb619@gmail.com</a></span>
+                            </li>
+                            <li>
+                                <span class="info-card__key"><i class="fa-solid fa-phone"></i> Phone:</span>
+                                <span class="info-card__val"><a href="tel:+233593658166">+233 59 365 8166</a></span>
+                            </li>
+                            <li>
+                                <span class="info-card__key"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                <span class="info-card__val">Kweku Essoun St, Takoradi, Ghana</span>
+                            </li>
+                            <li>
+                                <span class="info-card__key"><i class="fa-solid fa-building"></i> Current Base:</span>
+                                <span class="info-card__val">TTU Directorate of ICT Services</span>
+                            </li>
+                            <li>
+                                <span class="info-card__key"><i class="fa-solid fa-circle-check"></i> Status:</span>
+                                <span class="badge-available">Open to Internships / Roles</span>
+                            </li>
+                        </ul>
+
+                        <div class="info-card__action">
+                            <a href="#contact" class="btn btn--primary btn--full">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <span>Get in Touch Directly</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Technical Stack</span>
+                    <h2 class="section__title">Skills & Technologies</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills__tabs">
+                    <button class="skill-tab active" data-target="all">All Skills</button>
+                    <button class="skill-tab" data-target="frontend">Frontend</button>
+                    <button class="skill-tab" data-target="backend">Backend & Languages</button>
+                    <button class="skill-tab" data-target="tools">Tools & Environments</button>
+                    <button class="skill-tab" data-target="soft">Professional & Core</button>
+                </div>
+
+                <div class="skills__grid grid" id="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-card glass-card" data-category="frontend">
+                        <div class="skill-card__header">
+                            <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">HTML5</h4>
+                                <span class="skill-card__category">Semantic Structure & Web Standards</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Semantic layouts, accessible markup, modern SEO metadata, and clean hierarchy.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="frontend">
+                        <div class="skill-card__header">
+                            <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">CSS3</h4>
+                                <span class="skill-card__category">Flexbox, Grid & Modern Styling</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Responsive design, CSS custom properties, media queries, animations, and clean cards.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="frontend">
+                        <div class="skill-card__header">
+                            <i class="fa-brands fa-js skill-icon js-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">JavaScript (ES6+)</h4>
+                                <span class="skill-card__category">DOM Manipulation & Interactivity</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Event handling, dynamic DOM updating, async actions, localStorage, and modular scripting.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 78%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Languages -->
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-card__header">
+                            <i class="fa-brands fa-python skill-icon python-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">Python</h4>
+                                <span class="skill-card__category">Tkinter GUIs & Scripting</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Desktop GUIs via Tkinter, backend scripting, structured error handling, and API integration.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-card__header">
+                            <i class="fa-brands fa-java skill-icon java-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">Java</h4>
+                                <span class="skill-card__category">OOP & Data Structures</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Object-Oriented Programming, classes, inheritance, interfaces, and core problem-solving.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-card__header">
+                            <i class="fa-brands fa-php skill-icon php-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">PHP & XAMPP</h4>
+                                <span class="skill-card__category">Server-Side Web Development</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Dynamic database-backed web applications, server scripts, and local Apache environments.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 72%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="backend">
+                        <div class="skill-card__header">
+                            <i class="fa-solid fa-database skill-icon sql-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">SQL & Databases</h4>
+                                <span class="skill-card__category">Relational Data Management</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">CRUD operations, table schemas, queries, data integrity, and inventory storage design.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card glass-card" data-category="tools">
+                        <div class="skill-card__header">
+                            <i class="fa-brands fa-git-alt skill-icon git-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">Git & GitHub</h4>
+                                <span class="skill-card__category">Version Control & Collaboration</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Branching, committing, staging, pull requests, and repository tracking workflows.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 82%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="tools">
+                        <div class="skill-card__header">
+                            <i class="fa-solid fa-terminal skill-icon bash-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">Bash & Developer Tools</h4>
+                                <span class="skill-card__category">CLI, VS Code & IDEs</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Comfortable in Bash, VS Code, IntelliJ IDEA, PyCharm, and multi-monitor developer setups.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft / Professional -->
+                    <div class="skill-card glass-card" data-category="soft">
+                        <div class="skill-card__header">
+                            <i class="fa-solid fa-shield-halved skill-icon security-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">Accountability & Fraud Prevention</h4>
+                                <span class="skill-card__category">High Stakes Accuracy</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Proven precision handling high-volume transactions, fraud detection, and system audits.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="soft">
+                        <div class="skill-card__header">
+                            <i class="fa-solid fa-chalkboard-user skill-icon mentor-color"></i>
+                            <div>
+                                <h4 class="skill-card__title">Peer Training & Leadership</h4>
+                                <span class="skill-card__category">Mentorship & Communication</span>
+                            </div>
+                        </div>
+                        <p class="skill-card__desc">Proven experience training junior attendants and communicating clearly with stakeholders.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Featured Work</span>
+                    <h2 class="section__title">Projects & Systems</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project__filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="backend">Backend & OOP</button>
+                    <button class="filter-btn" data-filter="systems">Productivity & Apps</button>
+                </div>
+
+                <div class="projects__grid grid">
+                    <!-- Project 1: Inventory Management System -->
+                    <article class="project-card glass-card" data-category="web backend">
+                        <div class="project-card__preview preview-inventory">
+                            <div class="project-badge">Full-Stack System</div>
+                            <i class="fa-solid fa-boxes-stacked project-watermark"></i>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>XAMPP</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <h3 class="project-card__title">Inventory Management System</h3>
+                            <p class="project-card__desc">
+                                A comprehensive database-driven inventory tracking system. Tracks stock flow, logs sales transactions, 
+                                and provides real-time stock alerts to prevent discrepancies and inventory loss.
+                            </p>
+                            <div class="project-card__footer">
+                                <button class="btn-link open-modal-btn" data-project="inventory">
+                                    <span>Explore Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-github" title="View Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Taskflow -->
+                    <article class="project-card glass-card" data-category="systems web">
+                        <div class="project-card__preview preview-taskflow">
+                            <div class="project-badge">Productivity App</div>
+                            <i class="fa-solid fa-list-check project-watermark"></i>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>Modern CSS</span>
+                                <span>JavaScript</span>
+                                <span>Workflow UI</span>
+                            </div>
+                            <h3 class="project-card__title">Taskflow - Productivity Engine</h3>
+                            <p class="project-card__desc">
+                                A streamlined task and workflow management dashboard built for developers to track deliverables, 
+                                prioritize coding milestones, and visualize productivity stats cleanly.
+                            </p>
+                            <div class="project-card__footer">
+                                <button class="btn-link open-modal-btn" data-project="taskflow">
+                                    <span>Explore Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-github" title="View Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: BankAccount OOP Suite -->
+                    <article class="project-card glass-card" data-category="backend">
+                        <div class="project-card__preview preview-banking">
+                            <div class="project-badge">Object-Oriented Architecture</div>
+                            <i class="fa-solid fa-building-columns project-watermark"></i>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>OOP</span>
+                                <span>Interfaces</span>
+                                <span>Inheritance</span>
+                            </div>
+                            <h3 class="project-card__title">Bank Account OOP Architecture</h3>
+                            <p class="project-card__desc">
+                                Robust Java banking model demonstrating object-oriented principles, interface abstraction, 
+                                account validation, safe deposit/withdrawal logic, and comprehensive audit string formatting.
+                            </p>
+                            <div class="project-card__footer">
+                                <button class="btn-link open-modal-btn" data-project="banking">
+                                    <span>Explore Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-github" title="View Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Python Tkinter & Secure Backend API -->
+                    <article class="project-card glass-card" data-category="backend systems">
+                        <div class="project-card__preview preview-python">
+                            <div class="project-badge">Desktop GUI & Backend</div>
+                            <i class="fa-brands fa-python project-watermark"></i>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Tkinter</span>
+                                <span>REST APIs</span>
+                                <span>Error Diagnostics</span>
+                            </div>
+                            <h3 class="project-card__title">Tkinter GUI & Backend API Bridge</h3>
+                            <p class="project-card__desc">
+                                Engineered at DND Next Gen Technology. A native desktop interface utilizing Python Tkinter, 
+                                communicating with secure backend API endpoints with structured error response parsing.
+                            </p>
+                            <div class="project-card__footer">
+                                <button class="btn-link open-modal-btn" data-project="tkinter">
+                                    <span>Explore Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-github" title="View Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Professional Frontend CV Portfolio -->
+                    <article class="project-card glass-card" data-category="web">
+                        <div class="project-card__preview preview-cv">
+                            <div class="project-badge">Web Profile</div>
+                            <i class="fa-solid fa-address-card project-watermark"></i>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3 Flexbox</span>
+                                <span>Web Accessibility</span>
+                                <span>TTU ICT Project</span>
+                            </div>
+                            <h3 class="project-card__title">Professional CV & Digital Profile</h3>
+                            <p class="project-card__desc">
+                                Clean, responsive digital CV built during the TTU Directorate of ICT Services internship, 
+                                incorporating industry feedback on semantics, accessibility, and modern aesthetics.
+                            </p>
+                            <div class="project-card__footer">
+                                <button class="btn-link open-modal-btn" data-project="frontendcv">
+                                    <span>Explore Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-github" title="View Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Java Algorithmic Suite & FizzBuzz -->
+                    <article class="project-card glass-card" data-category="backend">
+                        <div class="project-card__preview preview-algorithms">
+                            <div class="project-badge">Algorithms</div>
+                            <i class="fa-solid fa-code-branch project-watermark"></i>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Scanner I/O</span>
+                                <span>Logic Flow</span>
+                                <span>IntelliJ</span>
+                            </div>
+                            <h3 class="project-card__title">Algorithmic Foundations & I/O Suite</h3>
+                            <p class="project-card__desc">
+                                Core logic implementations including conditional evaluation pipelines, scanner input validations, 
+                                and algorithm benchmarks authored within IntelliJ IDEA.
+                            </p>
+                            <div class="project-card__footer">
+                                <button class="btn-link open-modal-btn" data-project="algorithms">
+                                    <span>Explore Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-github" title="View Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Work History</span>
+                    <h2 class="section__title">Professional Experience</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="timeline__content glass-card">
+                            <div class="timeline__header">
+                                <span class="timeline__badge current">Current Internship</span>
+                                <span class="timeline__date"><i class="fa-regular fa-calendar"></i> 2026 - Present</span>
+                            </div>
+                            <h3 class="timeline__role">Software Development Intern</h3>
+                            <h4 class="timeline__company">Directorate of ICT Services, Takoradi Technical University (TTU)</h4>
+                            <p class="timeline__desc">
+                                Honing modern frontend & backend engineering practices under the mentorship of senior ICT professionals:
+                            </p>
+                            <ul class="timeline__bullets">
+                                <li>Engineering responsive web architectures using HTML5, modern CSS, and JavaScript.</li>
+                                <li>Incorporating expert code reviews and industry best practices into production code.</li>
+                                <li>Collaborating with IT staff on university digital systems and portal workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="timeline__content glass-card">
+                            <div class="timeline__header">
+                                <span class="timeline__badge">Tech Internship</span>
+                                <span class="timeline__date"><i class="fa-regular fa-calendar"></i> August 2025 - October 2025</span>
+                            </div>
+                            <h3 class="timeline__role">Backend Developer</h3>
+                            <h4 class="timeline__company">DND Next Gen Technology, Takoradi</h4>
+                            <p class="timeline__desc">
+                                Focused on desktop application development and API integration:
+                            </p>
+                            <ul class="timeline__bullets">
+                                <li>Built Graphical User Interfaces (GUIs) with Python’s standard library Tkinter.</li>
+                                <li>Engineered and integrated secure backend REST API endpoints with backend databases.</li>
+                                <li>Implemented rigorous error handling and informative diagnostics for end-users.</li>
+                                <li>Utilized Git/GitHub version control workflows across multi-monitor workstations.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </div>
+                        <div class="timeline__content glass-card">
+                            <div class="timeline__header">
+                                <span class="timeline__badge">Operations</span>
+                                <span class="timeline__date"><i class="fa-regular fa-calendar"></i> April 2022 - December 2024</span>
+                            </div>
+                            <h3 class="timeline__role">Mobile Money Attendant & Cash Auditor</h3>
+                            <h4 class="timeline__company">Ransbecca Enterprise, Anagye, Axim</h4>
+                            <p class="timeline__desc">
+                                Managed high-volume financial transactions and security protocols:
+                            </p>
+                            <ul class="timeline__bullets">
+                                <li>Proactive detection and prevention of mobile money fraud schemes.</li>
+                                <li>Zero-variance daily ledger balancing, financial accountability, and cash reconciliation.</li>
+                                <li>Delivered courteous, calm customer support in high-pressure financial environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <div class="timeline__content glass-card">
+                            <div class="timeline__header">
+                                <span class="timeline__badge">Leadership</span>
+                                <span class="timeline__date"><i class="fa-regular fa-calendar"></i> June 2020 - March 2021</span>
+                            </div>
+                            <h3 class="timeline__role">Mobile Money Attendant & Agent Trainer</h3>
+                            <h4 class="timeline__company">Dansyl Business Solution, Apowa, Takoradi</h4>
+                            <p class="timeline__desc">
+                                Operational excellence and training junior staff:
+                            </p>
+                            <ul class="timeline__bullets">
+                                <li>Trained incoming junior attendants on fraud protocols and transaction software.</li>
+                                <li>Maintained strict financial audit trails and client data privacy standards.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Academic Background</span>
+                    <h2 class="section__title">Education & Credentials</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="education__grid grid">
+                    <div class="education__card glass-card">
+                        <div class="education__icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="education__body">
+                            <span class="education__period"><i class="fa-regular fa-calendar"></i> January 2025 - August 2028 (Expected)</span>
+                            <h3 class="education__degree">BTECH Information Technology (Software Engineering)</h3>
+                            <h4 class="education__school">Takoradi Technical University (TTU)</h4>
+                            <p class="education__desc">
+                                In-depth study of Object-Oriented Software Engineering, Data Structures, Database Systems, 
+                                Web Architecture, Algorithm Design, and Information Systems Management.
+                            </p>
+                            <div class="education__tags">
+                                <span>Software Engineering</span>
+                                <span>OOP</span>
+                                <span>Database Systems</span>
+                                <span>Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education__card glass-card">
+                        <div class="education__icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="education__body">
+                            <span class="education__period"><i class="fa-regular fa-calendar"></i> October 2016 - June 2019</span>
+                            <h3 class="education__degree">Senior High School Certificate (WASSCE)</h3>
+                            <h4 class="education__school">St. Mary's Boys' Senior High School</h4>
+                            <p class="education__desc">
+                                Focused on Agricultural Science, analytical reasoning, biological sciences, and foundational mathematics.
+                            </p>
+                            <div class="education__tags">
+                                <span>Analytical Thinking</span>
+                                <span>Mathematics</span>
+                                <span>Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal / Code Playground Section -->
+        <section class="playground section">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Interactive Console</span>
+                    <h2 class="section__title">Developer Command Shell</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="terminal-container glass-card">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <span class="terminal-title">bash -- interactive portfolio shell v1.0</span>
+                        <button class="terminal-help-btn" id="terminal-help-btn" title="View available commands">Help</button>
+                    </div>
+
+                    <div class="terminal-output font-mono" id="terminal-output">
+                        <div class="terminal-msg">Welcome to Ebenezer's interactive terminal! Type <span class="code-highlight">help</span> or click quick commands below.</div>
+                        <div class="terminal-msg">Try: <span class="cmd-pill" data-cmd="skills">skills</span> <span class="cmd-pill" data-cmd="projects">projects</span> <span class="cmd-pill" data-cmd="contact">contact</span> <span class="cmd-pill" data-cmd="about">about</span> <span class="cmd-pill" data-cmd="clear">clear</span></div>
+                    </div>
+
+                    <form class="terminal-input-row font-mono" id="terminal-form">
+                        <span class="terminal-prompt">ebenezer@portfolio:~$</span>
+                        <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" placeholder="type a command...">
+                        <button type="submit" class="terminal-submit"><i class="fa-solid fa-arrow-turn-down"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Get In Touch</span>
+                    <h2 class="section__title">Contact & Connect</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="contact__container grid">
+                    <!-- Contact Cards -->
+                    <div class="contact__info">
+                        <h3 class="contact__info-title">Let's discuss an internship, project, or collaboration!</h3>
+                        <p class="contact__info-desc">
+                            Feel free to reach out directly via email, phone, or WhatsApp. I reply promptly and welcome opportunities 
+                            to build meaningful software.
+                        </p>
+
+                        <div class="contact__cards">
+                            <!-- Email -->
+                            <div class="contact__card glass-card">
+                                <div class="contact__card-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact__card-body">
+                                    <span class="contact__card-label">Email</span>
+                                    <span class="contact__card-value">ebenezerb619@gmail.com</span>
+                                </div>
+                                <button class="copy-btn" data-copy="ebenezerb619@gmail.com" title="Copy email address">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <!-- Phone / WhatsApp -->
+                            <div class="contact__card glass-card">
+                                <div class="contact__card-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact__card-body">
+                                    <span class="contact__card-label">Phone & WhatsApp</span>
+                                    <span class="contact__card-value">+233 59 365 8166</span>
+                                </div>
+                                <a href="https://wa.me/233593658166" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" title="Chat on WhatsApp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact__card glass-card">
+                                <div class="contact__card-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact__card-body">
+                                    <span class="contact__card-label">Location</span>
+                                    <span class="contact__card-value">Kweku Essoun ST WS-130-5004, Takoradi, Ghana</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct Social Networks -->
+                        <div class="contact__socials">
+                            <h4>All Social Channels:</h4>
+                            <div class="socials__links">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social__link" title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ebenezer-boateng-opoku-a9831430a" target="_blank" rel="noopener noreferrer" class="social__link" title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://wa.me/233593658166" target="_blank" rel="noopener noreferrer" class="social__link" title="WhatsApp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://t.me/OpokuBoatengEbenezer" target="_blank" rel="noopener noreferrer" class="social__link" title="Telegram">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                                <a href="https://twitter.com/opoku_Boateng2" target="_blank" rel="noopener noreferrer" class="social__link" title="X (Twitter)">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="https://facebook.com/opokuboateng.ebenezer5" target="_blank" rel="noopener noreferrer" class="social__link" title="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@ebenezerboateng1520" target="_blank" rel="noopener noreferrer" class="social__link" title="YouTube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact__form-container glass-card">
+                        <h3 class="form__title">Send a Quick Message</h3>
+                        <form id="contact-form" class="contact__form">
+                            <div class="form__group">
+                                <label for="sender-name" class="form__label">Your Name</label>
+                                <div class="form__input-wrapper">
+                                    <i class="fa-regular fa-user form__input-icon"></i>
+                                    <input type="text" id="sender-name" name="name" class="form__input" placeholder="e.g. Samuel Mensah" required>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="sender-email" class="form__label">Your Email</label>
+                                <div class="form__input-wrapper">
+                                    <i class="fa-regular fa-envelope form__input-icon"></i>
+                                    <input type="email" id="sender-email" name="email" class="form__input" placeholder="e.g. samuel@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="sender-subject" class="form__label">Subject</label>
+                                <div class="form__input-wrapper">
+                                    <i class="fa-regular fa-bookmark form__input-icon"></i>
+                                    <input type="text" id="sender-subject" name="subject" class="form__input" placeholder="e.g. Internship Inquiry / Project Collaboration" required>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="sender-message" class="form__label">Message</label>
+                                <div class="form__input-wrapper">
+                                    <textarea id="sender-message" name="message" class="form__textarea" rows="4" placeholder="Hi Ebenezer, I would love to connect regarding..." required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form__actions">
+                                <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                                    <span>Send Message</span>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </button>
+                                <button type="button" class="btn btn--secondary btn--full" id="whatsapp-direct-btn">
+                                    <span>Send via WhatsApp</span>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#hero" class="footer__logo">
+                        <span class="logo__bracket">&lt;</span>
+                        <span class="logo__name">Ebenezer Opoku Boateng</span>
+                        <span class="logo__slash">/</span>
+                        <span class="logo__bracket">&gt;</span>
+                    </a>
+                    <p class="footer__tagline">
+                        Software Developer & BTECH Information Technology student at TTU, Takoradi, Ghana.
+                    </p>
+                </div>
+
+                <div class="footer__links-group">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <ul class="footer__nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links-group">
+                    <h4 class="footer__heading">Social Connect</h4>
+                    <div class="footer__socials">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ebenezer-boateng-opoku-a9831430a" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/233593658166" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://twitter.com/opoku_Boateng2" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://t.me/OpokuBoatengEbenezer" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Ebenezer Opoku Boateng. All rights reserved.</p>
+                <p class="footer__tech-stack">Built with HTML5, CSS3 & Modern JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#hero" class="scrolltop" id="scroll-top" aria-label="Scroll back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__content glass-card">
+            <button class="modal__close" id="modal-close" aria-label="Close dialog">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal__body" id="modal-body">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Overview Modal -->
+    <div class="modal" id="cv-modal" aria-hidden="true" role="dialog">
+        <div class="modal__overlay" id="cv-modal-overlay"></div>
+        <div class="modal__content glass-card cv-modal-content">
+            <button class="modal__close" id="cv-modal-close" aria-label="Close dialog">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal__body">
+                <div class="cv-preview-header">
+                    <h2>Ebenezer Opoku Boateng</h2>
+                    <p class="cv-preview-subtitle">Software Developer | BTech IT (Software Engineering)</p>
+                    <p class="cv-preview-contact">
+                        <span><i class="fa-solid fa-envelope"></i> ebenezerb619@gmail.com</span> | 
+                        <span><i class="fa-solid fa-phone"></i> +233 59 365 8166</span> | 
+                        <span><i class="fa-solid fa-location-dot"></i> Takoradi, Ghana</span>
+                    </p>
+                </div>
+
+                <div class="cv-preview-section">
+                    <h3>Summary</h3>
+                    <p>
+                        Dedicated Software Developer and BTECH IT student with proven competency across modern web technologies 
+                        (HTML5, CSS3, JavaScript), backend application development (Python Tkinter, Java OOP, PHP, SQL), 
+                        and robust error handling. Active intern at TTU Directorate of ICT Services with strong financial accountability background.
+                    </p>
+                </div>
+
+                <div class="cv-preview-section">
+                    <h3>Education</h3>
+                    <p><strong>Takoradi Technical University</strong> — BTECH Information Technology (Software Engineering) [2025 - 2028]</p>
+                    <p><strong>St. Mary's Boys' Senior High School</strong> — Agricultural Science [2016 - 2019]</p>
+                </div>
+
+                <div class="cv-preview-section">
+                    <h3>Experience</h3>
+                    <p><strong>Directorate of ICT Services, TTU</strong> — Software Development Intern [2026 - Present]</p>
+                    <p><strong>DND Next Gen Technology</strong> — Backend Developer [Aug 2025 - Oct 2025]</p>
+                    <p><strong>Ransbecca Enterprise & Dansyl Business Solution</strong> — Mobile Money Attendant & Junior Trainer [2020 - 2024]</p>
+                </div>
+
+                <div class="cv-preview-actions">
+                    <button class="btn btn--primary" onclick="window.print()">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print / Save as PDF</span>
+                    </button>
+                    <a href="mailto:ebenezerb619@gmail.com?subject=Resume%20Request%20for%20Ebenezer%20Opoku%20Boateng" class="btn btn--secondary">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Request Official Document</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <i class="toast__icon fa-solid fa-circle-check"></i>
+        <span class="toast__message" id="toast-message">Notification message</span>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
