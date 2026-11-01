@@ -361,7 +361,7 @@ function initCVModal() {
         }
     });
 }
- 
+
 /* ===================================================================
    8. INTERACTIVE TERMINAL SHELL
    =================================================================== */
@@ -536,63 +536,25 @@ function initContactAndToast() {
         });
     }
 
-    // Send contact messages through FormSubmit without leaving the page.
+    // Standard Form Submission simulation
     if (contactForm) {
-        contactForm.addEventListener('submit', async (e) => {
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const submitButton = document.getElementById('submit-btn');
-            const submitLabel = submitButton ? submitButton.querySelector('span') : null;
-            const originalLabel = submitLabel ? submitLabel.textContent : '';
-
-            if (submitButton) submitButton.disabled = true;
-            if (submitLabel) submitLabel.textContent = 'Sending...';
-
-            try {
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify(Object.fromEntries(new FormData(contactForm).entries()))
-                });
-
-                if (!response.ok) {
-                    throw new Error(`Contact form request failed with status ${response.status}`);
-                }
-
-                const result = await response.json();
-                if (result.success !== 'true' && result.success !== true) {
-                    throw new Error(result.message || 'The contact form service rejected the message.');
-                }
-
-                contactForm.reset();
-                showToast('Your message was sent successfully. Thank you!', 4000);
-            } catch (error) {
-                console.error('Contact form submission failed:', error);
-                showToast('Message could not be sent. Please try again or email ebenezerb619@gmail.com.', 5000, 'error');
-            } finally {
-                if (submitButton) submitButton.disabled = false;
-                if (submitLabel) submitLabel.textContent = originalLabel;
-            }
+            const name = document.getElementById('sender-name').value;
+            showToast(`Thank you, ${name}! Your message has been simulated sent.`, 4000);
+            contactForm.reset();
         });
     }
 }
 
 // Global Toast Function
-function showToast(message, duration = 3000, type = 'success') {
+function showToast(message, duration = 3000) {
     const toast = document.getElementById('toast');
     const toastMessage = document.getElementById('toast-message');
 
     if (!toast || !toastMessage) return;
 
     toastMessage.textContent = message;
-    toast.classList.toggle('toast--error', type === 'error');
-    const toastIcon = toast.querySelector('.toast__icon');
-    if (toastIcon) {
-        toastIcon.classList.toggle('fa-circle-check', type !== 'error');
-        toastIcon.classList.toggle('fa-circle-exclamation', type === 'error');
-    }
     toast.classList.add('show');
 
     clearTimeout(window._toastTimeout);

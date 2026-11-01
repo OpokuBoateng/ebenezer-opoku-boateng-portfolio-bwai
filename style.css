@@ -190,9 +190,9 @@ img {
 
 .gradient-text {
     background: var(--primary-gradient);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .font-mono {
@@ -1586,14 +1586,6 @@ img {
 
 .toast__icon {
     color: var(--accent-emerald);
-}
-
-.toast--error {
-    border-color: #ef4444;
-}
-
-.toast--error .toast__icon {
-    color: #ef4444;
 }
 
 /* ===================================================================
