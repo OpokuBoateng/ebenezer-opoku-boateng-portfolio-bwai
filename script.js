@@ -536,13 +536,53 @@ function initContactAndToast() {
         });
     }
 
-    // Standard Form Submission simulation
+    // Send contact messages through FormSubmit's AJAX endpoint
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const name = document.getElementById('sender-name').value;
-            showToast(`Thank you, ${name}! Your message has been simulated sent.`, 4000);
-            contactForm.reset();
+            if (!contactForm.reportValidity()) return;
+
+            const submitBtn = document.getElementById('submit-btn');
+            const submitLabel = submitBtn.querySelector('span');
+            const name = document.getElementById('sender-name').value.trim();
+            const email = document.getElementById('sender-email').value.trim();
+            const subject = document.getElementById('sender-subject').value.trim();
+            const message = document.getElementById('sender-message').value.trim();
+            const originalLabel = submitLabel.textContent;
+
+            submitBtn.disabled = true;
+            submitLabel.textContent = 'Sending...';
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        _replyto: email,
+                        _subject: subject,
+                        message
+                    })
+                });
+                const result = await response.json();
+
+                if (!response.ok || (result.success !== true && result.success !== 'true')) {
+                    throw new Error(result.message || 'The message could not be sent.');
+                }
+
+                showToast(`Thank you, ${name}! Your message was sent.`, 4000);
+                contactForm.reset();
+            } catch (error) {
+                console.error('Contact form submission failed:', error);
+                showToast('Could not send your message. Please email ebenezerb619@gmail.com or use WhatsApp.', 5000);
+            } finally {
+                submitBtn.disabled = false;
+                submitLabel.textContent = originalLabel;
+            }
         });
     }
 }
